@@ -6,7 +6,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  bool _loading = false;
+  bool _loading = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,6 +48,44 @@ class _HomeState extends State<Home> {
                         ),
                       )
                     : Container()),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      width: MediaQuery.of(context).size.width - 200,
+                      alignment: Alignment.center,
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 24, vertical: 13),
+                      decoration: BoxDecoration(
+                          color: Color(0xFFE99600),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: Text('Take a photo',
+                          style: TextStyle(color: Colors.white)),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      width: MediaQuery.of(context).size.width - 200,
+                      alignment: Alignment.center,
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 24, vertical: 13),
+                      decoration: BoxDecoration(
+                          color: Color(0xFFE99600),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: Text('Take a photo',
+                          style: TextStyle(color: Colors.white)),
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
