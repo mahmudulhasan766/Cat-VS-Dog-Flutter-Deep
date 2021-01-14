@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
                       decoration: BoxDecoration(
                           color: Color(0xFFE99600),
                           borderRadius: BorderRadius.circular(6)),
-                      child: Text('Take a photo',
+                      child: Text('Camera Roll',
                           style: TextStyle(color: Colors.white)),
                     ),
                   ),
