@@ -44,7 +44,6 @@ class _HomeState extends State<Home> {
   @override
   void dispose() {
     Tflite.close();
-    // TODO: implement dispose
     super.dispose();
   }
 
@@ -112,7 +111,7 @@ class _HomeState extends State<Home> {
                             height: 20,
                           ),
                           _output != null
-                              ? Text('${_output[0]}',
+                              ? Text('${_output[0]['label']}',
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 20))
                               : Container()
