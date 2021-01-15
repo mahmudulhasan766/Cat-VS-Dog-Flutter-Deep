@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:catvsdog/imp/route.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:tflite/tflite.dart';
@@ -70,22 +71,36 @@ class _HomeState extends State<CDHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Container(
+          alignment: Alignment.centerLeft,
+          width: MediaQuery.of(context).size.width,
+          child: Text(
+            "Detect Cats and Dogs",
+            style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontFamily: "Poppins"),
+          ),
+        ),
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.of(context).pushNamedAndRemoveUntil(
+                BRANCH_, (Route<dynamic> route) => false);
+          },
+          child: Icon(
+            Icons.arrow_back,
+            color: Colors.white,
+          ),
+        ),
+      ),
       backgroundColor: Color(0xFF101010),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 30),
-            SizedBox(height: 6),
-            Text(
-              'Detect Dogs and Cats',
-              style: TextStyle(
-                color: Color(0xFFE99600),
-                fontSize: 28,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
             SizedBox(height: 40),
             Center(
               child: _loading
