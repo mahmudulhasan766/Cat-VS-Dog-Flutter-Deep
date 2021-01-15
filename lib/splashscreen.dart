@@ -1,7 +1,6 @@
+import 'package:catvsdog/imp/route.dart';
 import 'package:flutter/material.dart';
 import "package:splashscreen/splashscreen.dart";
-
-import 'home.dart';
 
 class MySplash extends StatefulWidget {
   @override
@@ -13,7 +12,7 @@ class _MySplashState extends State<MySplash> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 2,
-      navigateAfterSeconds: Home(),
+      navigateAfterSeconds: HOME_CD,
       title: Text(
         'Dog and Cat',
         style: TextStyle(

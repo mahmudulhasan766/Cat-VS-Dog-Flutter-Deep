@@ -2,7 +2,7 @@ import 'package:catvsdog/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:catvsdog/imp/route.dart';
 
-import 'home.dart';
+import 'cdhome.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //home: MySplash(),
       routes: <String, WidgetBuilder>{
-        HOME_: (BuildContext context) => Home(),
+        HOME_CD: (BuildContext context) => CDHome(),
         SPLASH_CREEN: (BuildContext context) => MySplash(),
       },
       initialRoute: SPLASH_CREEN,

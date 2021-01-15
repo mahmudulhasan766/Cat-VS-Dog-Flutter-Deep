@@ -1,2 +1,2 @@
-String HOME_ = 'home';
+String HOME_CD = 'homeCD';
 String SPLASH_CREEN = 'SplashScreen';
