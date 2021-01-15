@@ -1,5 +1,8 @@
 import 'package:catvsdog/splashscreen.dart';
 import 'package:flutter/material.dart';
+import 'package:catvsdog/imp/route.dart';
+
+import 'home.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +15,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Cat vs Dog',
       debugShowCheckedModeBanner: false,
-      home: MySplash(),
+      //home: MySplash(),
+      routes: <String, WidgetBuilder>{
+        HOME_: (BuildContext context) => Home(),
+        SPLASH_CREEN: (BuildContext context) => MySplash(),
+      },
+      initialRoute: SPLASH_CREEN,
     );
   }
 }

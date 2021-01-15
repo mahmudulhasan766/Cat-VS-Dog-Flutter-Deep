@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
             SizedBox(height: 30),
             SizedBox(height: 6),
             Text(
-              'Detect Dog and Cats',
+              'Detect Dogs and Cats',
               style: TextStyle(
                 color: Color(0xFFE99600),
                 fontSize: 28,
@@ -133,7 +133,7 @@ class _HomeState extends State<Home> {
                       decoration: BoxDecoration(
                           color: Color(0xFFE99600),
                           borderRadius: BorderRadius.circular(6)),
-                      child: Text('Take a photo',
+                      child: Text('Take a Photo',
                           style: TextStyle(color: Colors.white)),
                     ),
                   ),
@@ -150,7 +150,7 @@ class _HomeState extends State<Home> {
                       decoration: BoxDecoration(
                           color: Color(0xFFE99600),
                           borderRadius: BorderRadius.circular(6)),
-                      child: Text('Camera Roll',
+                      child: Text('Gallery Photo',
                           style: TextStyle(color: Colors.white)),
                     ),
                   ),
