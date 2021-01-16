@@ -12,7 +12,7 @@ class _MySplashState extends State<MySplash> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 2,
-      navigateAfterSeconds: HOME_CD,
+      navigateAfterSeconds: BRANCH_,
       title: Text(
         'Dog and Cat',
         style: TextStyle(
